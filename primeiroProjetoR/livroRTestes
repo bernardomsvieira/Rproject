@@ -1,0 +1,54 @@
+assign("x",c(1,2,3,4))
+x
+
+y <-c(x,0,rev(x))
+y
+
+max(y)
+min(y)
+sum(y)
+
+#length(y) <-3
+length(y)
+prod(y)
+var(y)
+mean(y)
+
+x <- sort(x)
+
+x <- seq(0,10,by=.2)
+z <- x[1:5]
+
+usoFactor <- factor(y)
+print(usoFactor)
+
+state <- c("tas",
+"qld",
+"sa",
+"sa",
+"sa",
+"vic",
+"nt",
+"act",
+"qld",
+"nsw",
+"wa",
+"nsw",
+"nsw",
+"vic",
+"vic",
+"vic",
+"nsw",
+"qld",
+"qld",
+"vic",
+"nt", "wa", "wa",
+"qld", "sa", "tas",
+"nsw", "nsw", "wa",
+"act")
+statef <-factor(state)
+incomes <- c(60, 49, 40, 61, 64, 60, 59, 54, 62, 69, 70, 42, 56,
+61, 61, 61, 58, 51, 48, 65, 49, 49, 41, 48, 52, 46,
+59, 46, 58, 43)
+incmeans <- tapply(incomes, statef, mean)
+incmeans
